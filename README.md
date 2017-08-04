@@ -1,8 +1,11 @@
-<<<<<<< HEAD
 Tests for KSS-Mobile: Self-Services Module
 
-URL: http://kss-mobile.aws.kaplan.com.sg/index.php/selfServices/index
-=======
-# kss-mobile
-Automation Testing - Cucumber
->>>>>>> 24da971ba9acfb706d7e8c283ff27cba88172788
+Tool used: Selenium Webdriver
+Framework used: Cucumber
+Language: Java
+ 
+Test URL: kss-mobile.aws.kaplan.com.sg
+ 
+Features: 1) Check links in Self-Services page are linking to the respective pages
+          2) Create a new notification
+
