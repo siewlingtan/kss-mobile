@@ -1,0 +1,892 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3422531828,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Create notification",
+        "description": "",
+        "id": "create-notification;create-notification",
+        "after": [
+          {
+            "result": {
+              "duration": 146565,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1294208305,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in to KSS with correct \"\u003cstring\u003e\" and \"\u003cstring\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cstring\u003e",
+                  "offset": 36
+                },
+                {
+                  "val": "\u003cstring\u003e",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 420876097,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1883061737,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Create Notification link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnCreateNotificationLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1160979579,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I input title and content",
+            "match": {
+              "location": "CreateNotification.iInputTitleAndContent()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1148248960,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click Next",
+            "match": {
+              "location": "CreateNotification.iClickNext()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 457077627,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I input MID",
+            "match": {
+              "location": "CreateNotification.iInputMID()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 446716269,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click Next",
+            "match": {
+              "location": "CreateNotification.iClickNext()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 305145249,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I check on Email option",
+            "match": {
+              "location": "CreateNotification.iCheckOnEmailOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 272545028,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Send Now",
+            "match": {
+              "location": "CreateNotification.iClickOnSendNow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6927311199,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should see notification created successfully",
+            "match": {
+              "location": "CreateNotification.iShouldSeeNotificationCreatedSuccessfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Notification",
+    "description": "",
+    "id": "create-notification",
+    "keyword": "Feature",
+    "uri": "CreateNotification.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2688063500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Access Self Services Module",
+        "description": "",
+        "id": "self-services-module;access-self-services-module",
+        "after": [
+          {
+            "result": {
+              "duration": 65687,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1066877523,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 316878242,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48643125,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should be directed to Self-Services module",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToSelfServicesModule()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2743343101,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "View Notifications Link",
+        "description": "",
+        "id": "self-services-module;view-notifications-link",
+        "after": [
+          {
+            "result": {
+              "duration": 55834,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1520452783,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 361366231,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1818905312,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on View Notifications link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnViewNotificationsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56284206,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be directed to Notifications Listing Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToNotificationsListingPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2702161648,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Create Notification Link",
+        "description": "",
+        "id": "self-services-module;create-notification-link",
+        "after": [
+          {
+            "result": {
+              "duration": 48034,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1104027004,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 354797086,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1744324716,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on Create Notification link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnCreateNotificationLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57594258,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I should be directed to Create Notification Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToCreateNotificationPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2801193949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Academic Checklists Link",
+        "description": "",
+        "id": "self-services-module;academic-checklists-link",
+        "after": [
+          {
+            "result": {
+              "duration": 53371,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1110918428,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 409069206,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 849405591,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on Academic Checklists link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnAcademicChecklistsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46995194,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should be directed to Academic Checklists Listing Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToAcademicChecklistsListingPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3766559473,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Create Checklist Group Link",
+        "description": "",
+        "id": "self-services-module;create-checklist-group-link",
+        "after": [
+          {
+            "result": {
+              "duration": 44750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1456882618,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 345503557,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 792524862,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on Create Checklist Group link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnCreateChecklistGroupLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54001161,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should be directed to Create Checklist Group Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToCreateChecklistGroupPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3789347236,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "View Requests Link",
+        "description": "",
+        "id": "self-services-module;view-requests-link",
+        "after": [
+          {
+            "result": {
+              "duration": 53371,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1124356418,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 639579256,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1333470866,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I click on View Requests link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnViewRequestsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46354331,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I should be directed to View Requests Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToViewRequestsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3763385953,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "View Leaves Link",
+        "description": "",
+        "id": "self-services-module;view-leaves-link",
+        "after": [
+          {
+            "result": {
+              "duration": 58297,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1163773345,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 337314808,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1382488409,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I click on View Leaves link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnViewLeavesLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61902938,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I should be directed to View Leaves Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToViewLeavesPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2810213644,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "View Reports Link",
+        "description": "",
+        "id": "self-services-module;view-reports-link",
+        "after": [
+          {
+            "result": {
+              "duration": 41465,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1237076733,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I am logged in to KSS with correct \"username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 36
+                },
+                {
+                  "val": "password",
+                  "offset": 51
+                }
+              ],
+              "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 476307600,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Self-Services link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnSelfServicesLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1734566039,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I click on View Reports link",
+            "match": {
+              "location": "SelfServicesModule.iClickOnViewReportsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44696136,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I should be directed to View Reports Page",
+            "match": {
+              "location": "SelfServicesModule.iShouldBeDirectedToViewReportsPage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Self Services Module",
+    "description": "",
+    "id": "self-services-module",
+    "keyword": "Feature",
+    "uri": "SelfServicesModule.feature"
+  }
+]

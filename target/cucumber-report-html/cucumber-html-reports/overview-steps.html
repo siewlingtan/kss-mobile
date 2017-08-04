@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>KSS Mobile</td>
+              <td>1</td>
+            <td>04 Aug 2017, 10:45</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CreateNotification.iCheckOnEmailOption()</td>
+              <td>1</td>
+              <td class="duration" data-value="305145249">305ms</td>
+              <td class="duration" data-value="305145249">305ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateNotification.iClickNext()</td>
+              <td>2</td>
+              <td class="duration" data-value="1594965229">1s 594ms</td>
+              <td class="duration" data-value="797482614">797ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateNotification.iClickOnSendNow()</td>
+              <td>1</td>
+              <td class="duration" data-value="272545028">272ms</td>
+              <td class="duration" data-value="272545028">272ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateNotification.iInputMID()</td>
+              <td>1</td>
+              <td class="duration" data-value="457077627">457ms</td>
+              <td class="duration" data-value="457077627">457ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateNotification.iInputTitleAndContent()</td>
+              <td>1</td>
+              <td class="duration" data-value="1160979579">1s 160ms</td>
+              <td class="duration" data-value="1160979579">1s 160ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateNotification.iShouldSeeNotificationCreatedSuccessfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="6927311199">6s 927ms</td>
+              <td class="duration" data-value="6927311199">6s 927ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hook.InitializeTest()</td>
+              <td>9</td>
+              <td class="duration" data-value="28486800332">28s 486ms</td>
+              <td class="duration" data-value="3165200036">3s 165ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hook.TearDownTest(Scenario)</td>
+              <td>9</td>
+              <td class="duration" data-value="567374">000ms</td>
+              <td class="duration" data-value="63041">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)</td>
+              <td>9</td>
+              <td class="duration" data-value="11078573157">11s 078ms</td>
+              <td class="duration" data-value="1230952573">1s 230ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnAcademicChecklistsLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="849405591">849ms</td>
+              <td class="duration" data-value="849405591">849ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnCreateChecklistGroupLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="792524862">792ms</td>
+              <td class="duration" data-value="792524862">792ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnCreateNotificationLink()</td>
+              <td>2</td>
+              <td class="duration" data-value="3627386453">3s 627ms</td>
+              <td class="duration" data-value="1813693226">1s 813ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnSelfServicesLink()</td>
+              <td>9</td>
+              <td class="duration" data-value="3661692083">3s 661ms</td>
+              <td class="duration" data-value="406854675">406ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnViewLeavesLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="1382488409">1s 382ms</td>
+              <td class="duration" data-value="1382488409">1s 382ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnViewNotificationsLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="1818905312">1s 818ms</td>
+              <td class="duration" data-value="1818905312">1s 818ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnViewReportsLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="1734566039">1s 734ms</td>
+              <td class="duration" data-value="1734566039">1s 734ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iClickOnViewRequestsLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="1333470866">1s 333ms</td>
+              <td class="duration" data-value="1333470866">1s 333ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToAcademicChecklistsListingPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="46995194">046ms</td>
+              <td class="duration" data-value="46995194">046ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToCreateChecklistGroupPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="54001161">054ms</td>
+              <td class="duration" data-value="54001161">054ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToCreateNotificationPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="57594258">057ms</td>
+              <td class="duration" data-value="57594258">057ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToNotificationsListingPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="56284206">056ms</td>
+              <td class="duration" data-value="56284206">056ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToSelfServicesModule()</td>
+              <td>1</td>
+              <td class="duration" data-value="48643125">048ms</td>
+              <td class="duration" data-value="48643125">048ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToViewLeavesPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="61902938">061ms</td>
+              <td class="duration" data-value="61902938">061ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToViewReportsPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="44696136">044ms</td>
+              <td class="duration" data-value="44696136">044ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">SelfServicesModule.iShouldBeDirectedToViewRequestsPage()</td>
+              <td>1</td>
+              <td class="duration" data-value="46354331">046ms</td>
+              <td class="duration" data-value="46354331">046ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>25</td>
+            <td>59</td>
+            <td class="duration">1m 5s 900ms</td>
+            <td class="duration">1s 116ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
