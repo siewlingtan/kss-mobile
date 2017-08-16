@@ -4,6 +4,7 @@ import Base.BaseUtil;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -22,9 +23,14 @@ public class Hook extends BaseUtil{
 
         System.out.println("Opening the browser: Firefox");
 
-        System.setProperty("webdriver.gecko.driver","C:\\Users\\siewling.tan\\geckodriver-v0.18.0-win64\\geckodriver.exe");
+        // Firefox driver does not work in Jenkins
+        /*System.setProperty("webdriver.gecko.driver","C:\\Users\\siewling.tan\\geckodriver-v0.18.0-win64\\geckodriver.exe");
         base.Driver = new FirefoxDriver();
-        base.Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        base.Driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);*/
+
+        // Chrome driver
+        System.setProperty("webdriver.chrome.driver","C:\\\\Libs\\\\chromedriver.exe");
+        base.Driver = new ChromeDriver();
 
     }
 
@@ -39,6 +45,6 @@ public class Hook extends BaseUtil{
         }
 
         System.out.println("Closing the browser: Firefox");
-        // base.Driver.quit();
+        base.Driver.quit();
     }
 }
