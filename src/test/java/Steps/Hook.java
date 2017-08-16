@@ -21,7 +21,7 @@ public class Hook extends BaseUtil{
     @Before
     public void InitializeTest(){
 
-        System.out.println("Opening the browser: Firefox");
+        System.out.println("Opening the browser: Chrome");
 
         // Firefox driver does not work in Jenkins
         /*System.setProperty("webdriver.gecko.driver","C:\\Users\\siewling.tan\\geckodriver-v0.18.0-win64\\geckodriver.exe");
@@ -31,6 +31,7 @@ public class Hook extends BaseUtil{
         // Chrome driver
         System.setProperty("webdriver.chrome.driver","C:\\\\Libs\\\\chromedriver.exe");
         base.Driver = new ChromeDriver();
+        base.Driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
     }
 
@@ -44,7 +45,7 @@ public class Hook extends BaseUtil{
 
         }
 
-        System.out.println("Closing the browser: Firefox");
+        System.out.println("Closing the browser: Chrome");
         base.Driver.quit();
     }
 }
