@@ -2,20 +2,13 @@ package Steps;
 
 import Base.BaseUtil;
 import Pages.CreateNotificationPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class CreateNotification extends BaseUtil{
 
@@ -79,6 +72,10 @@ public class CreateNotification extends BaseUtil{
 
     @Then("^I should see notification created successfully$")
     public void iShouldSeeNotificationCreatedSuccessfully() throws Throwable {
+
+        // Wait till overlay shows up to verify message displayed in it
+        WebDriverWait wait = new WebDriverWait(base.Driver, 40);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.sweet-alert.showSweetAlert.visible")));
 
         WebElement confirmationMsg = base.Driver.findElement(By.xpath("//h2[contains(text(),'Create new notification successfully')]"));
         String confirmationMsgText = confirmationMsg.getText();
