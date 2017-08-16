@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage{
 
     public LoginPage(WebDriver driver){
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(how = How.NAME, using = "LoginForm[username]")
@@ -25,7 +25,7 @@ public class LoginPage {
     public void Login(String username, String password){
 
         username = "siewling.tan";
-        password = "Kx47DqRz95";
+        password = "q7C9Kik4H";
 
         txtUsername.sendKeys(username);
         txtPassword.sendKeys(password);
