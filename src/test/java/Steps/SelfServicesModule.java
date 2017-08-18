@@ -8,13 +8,56 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
-public class SelfServicesModule extends BaseUtil {
+public class SelfServicesModule extends BaseUtil{
 
     private BaseUtil base;
 
+    private LoginPage loginPage;
+    private KSSPage kssPage;
+    private SelfServicesPage selfServicesPage;
+    private ViewNotificationsPage viewNotificationsPage;
+    private CreateNotificationPage createNotificationPage;
+    private AcadChecklistsPage acadChecklistsPage;
+    private CreateChecklistGrpPage createChecklistGrpPage;
+    private ViewRequests viewRequests;
+    private ViewLeaveAppPage viewLeaveAppPage;
+    private ViewClassroomReportsPage viewClassroomReportsPage;
+
     public SelfServicesModule(BaseUtil base) {
         this.base = base;
+
+        LoginPage loginPage = new LoginPage(base.Driver);
+        this.loginPage = loginPage;
+
+        KSSPage kssPage = new KSSPage(base.Driver);
+        this.kssPage = kssPage;
+
+        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
+        this.selfServicesPage = selfServicesPage;
+
+        ViewNotificationsPage viewNotificationsPage = new ViewNotificationsPage(base.Driver);
+        this.viewNotificationsPage = viewNotificationsPage;
+
+        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
+        this.createNotificationPage = createNotificationPage;
+
+        AcadChecklistsPage acadChecklistsPage = new AcadChecklistsPage(base.Driver);
+        this.acadChecklistsPage = acadChecklistsPage;
+
+        CreateChecklistGrpPage createChecklistGrpPage = new CreateChecklistGrpPage(base.Driver);
+        this.createChecklistGrpPage = createChecklistGrpPage;
+
+        ViewRequests viewRequests = new ViewRequests(base.Driver);
+        this.viewRequests = viewRequests;
+
+        ViewLeaveAppPage viewLeaveAppPage = new ViewLeaveAppPage(base.Driver);
+        this.viewLeaveAppPage = viewLeaveAppPage;
+
+        ViewClassroomReportsPage viewClassroomReportsPage = new ViewClassroomReportsPage(base.Driver);
+        this.viewClassroomReportsPage = viewClassroomReportsPage;
+
     }
+
 
     @Given("^I am logged in to KSS with correct \"([^\"]*)\" and \"([^\"]*)\"$")
     public void iAmLoggedInToKSSWithCorrectAnd(String username, String password) throws Throwable {
@@ -23,14 +66,12 @@ public class SelfServicesModule extends BaseUtil {
         base.Driver.navigate().to("http://kss-mobile.aws.kaplan.com.sg/");
 
         // Input login credentials
-        LoginPage loginPage = new LoginPage(base.Driver);
         loginPage.Login(username, password);
 
         // Click Login
         loginPage.ClickLogin();
 
         // Verify that user is logged in by checking for presence of Logout link
-        KSSPage kssPage = new KSSPage(base.Driver);
         Assert.assertEquals("Not logged in", kssPage.logoutLink.isDisplayed(), true);
     }
 
@@ -38,7 +79,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnSelfServicesLink() throws Throwable {
 
         // Click on Self-Services link
-        KSSPage kssPage = new KSSPage(base.Driver);
         kssPage.clickSelfServices();
     }
 
@@ -46,7 +86,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToSelfServicesModule() throws Throwable {
 
         // Verify header text on page
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         Assert.assertEquals("Self Services", selfServicesPage.getSelfServicesHeaderText());
     }
 
@@ -54,7 +93,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnViewNotificationsLink() throws Throwable {
 
         // Click on View Notifications link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickViewNotificationsLink();
     }
 
@@ -62,7 +100,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToNotificationsListingPage() throws Throwable {
 
         // Verify header text on page
-        ViewNotificationsPage viewNotificationsPage = new ViewNotificationsPage(base.Driver);
         Assert.assertEquals("Notifications", viewNotificationsPage.getNotificationsHeaderText());
     }
 
@@ -70,7 +107,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnCreateNotificationLink() throws Throwable {
 
         // Click on Create Notification link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickCreateNotificationsLink();
     }
 
@@ -78,7 +114,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToCreateNotificationPage() throws Throwable {
 
         // Verify elements on page
-        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
         Assert.assertEquals("Text field for title is not displayed.", createNotificationPage.txtNotificationTitle.isDisplayed(),true);
 
     }
@@ -87,7 +122,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnAcademicChecklistsLink() throws Throwable {
 
         // Click on Academic Checklists link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickAcadChecklistsLink();
     }
 
@@ -95,7 +129,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToAcademicChecklistsListingPage() throws Throwable {
 
         // Verify header text on page
-        AcadChecklistsPage acadChecklistsPage = new AcadChecklistsPage(base.Driver);
         Assert.assertEquals("Academic Checklists", acadChecklistsPage.getAcadChecklistsHeaderText());
     }
 
@@ -103,7 +136,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnCreateChecklistGroupLink() throws Throwable {
 
         // Click on Create Checklist Group link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickCreateChecklistGrpLink();
     }
 
@@ -111,7 +143,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToCreateChecklistGroupPage() throws Throwable {
 
         // Verify header text on page
-        CreateChecklistGrpPage createChecklistGrpPage = new CreateChecklistGrpPage(base.Driver);
         Assert.assertEquals("Create Checklist Group", createChecklistGrpPage.getCreateChecklistGrpHeaderText());
     }
 
@@ -119,7 +150,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnViewRequestsLink() throws Throwable {
 
         // Click on View Requests link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickViewLOVReqLink();
     }
 
@@ -127,7 +157,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToViewRequestsPage() throws Throwable {
 
         // Verify header text on page
-        ViewRequests viewRequests = new ViewRequests(base.Driver);
         Assert.assertEquals("LOV Requests", viewRequests.getViewRequestsHeaderText());
     }
 
@@ -135,7 +164,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnViewLeavesLink() throws Throwable {
 
         // Click on View Leaves link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickViewLeavesLink();
     }
 
@@ -143,7 +171,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToViewLeavesPage() throws Throwable {
 
         // Verify header text on page
-        ViewLeaveAppPage viewLeaveAppPage = new ViewLeaveAppPage(base.Driver);
         Assert.assertEquals("Leave Applications", viewLeaveAppPage.getViewLeaveAppHeaderText());
     }
 
@@ -151,7 +178,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iClickOnViewReportsLink() throws Throwable {
 
         // Click on View Reports link
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
         selfServicesPage.clickViewReportsLink();
     }
 
@@ -159,7 +185,6 @@ public class SelfServicesModule extends BaseUtil {
     public void iShouldBeDirectedToViewReportsPage() throws Throwable {
 
         // Verify header text on page
-        ViewClassroomReportsPage viewClassroomReportsPage = new ViewClassroomReportsPage(base.Driver);
         Assert.assertEquals("Classroom Reports", viewClassroomReportsPage.getViewClassroomReportHeaderText());
     }
 }

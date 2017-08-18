@@ -5,7 +5,6 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,9 +12,11 @@ public class Hook extends BaseUtil{
 
     private BaseUtil base;
 
+
     public Hook(BaseUtil base) {
 
         this.base = base;
+
     }
 
     @Before

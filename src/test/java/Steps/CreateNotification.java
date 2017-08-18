@@ -13,16 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CreateNotification extends BaseUtil{
 
     private BaseUtil base;
+    private CreateNotificationPage createNotificationPage;
 
     public CreateNotification(BaseUtil base) {
         this.base = base;
+
+        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
+        this.createNotificationPage = createNotificationPage;
     }
 
     @And("^I input title and content$")
     public void iInputTitleAndContent() throws Throwable {
-
-
-        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
 
         // Input notification title
         createNotificationPage.txtNotificationTitle.click();
