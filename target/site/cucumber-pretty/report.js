@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2666358620,
+  "duration": 3255589900,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,78 +82,78 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1591851799,
+  "duration": 1622449428,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 365682080,
+  "duration": 397786825,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnCreateNotificationLink()"
 });
 formatter.result({
-  "duration": 1257049804,
+  "duration": 1343873433,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iInputTitleAndContent()"
 });
 formatter.result({
-  "duration": 996677857,
+  "duration": 967524121,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickNext()"
 });
 formatter.result({
-  "duration": 459653326,
+  "duration": 469077424,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iInputMID()"
 });
 formatter.result({
-  "duration": 308787709,
+  "duration": 305234839,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickNext()"
 });
 formatter.result({
-  "duration": 161724575,
+  "duration": 161686394,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iCheckOnEmailOption()"
 });
 formatter.result({
-  "duration": 106054454,
+  "duration": 108244720,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickOnSendNow()"
 });
 formatter.result({
-  "duration": 100487032,
+  "duration": 98148558,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iShouldSeeNotificationCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 5007548720,
+  "duration": 7554794630,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1059613421,
+  "duration": 1201919962,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1998022397,
+  "duration": 2016242866,
   "status": "passed"
 });
 formatter.scenario({
@@ -233,81 +233,81 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1470092706,
+  "duration": 1516036978,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 322023322,
+  "duration": 381222091,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnCreateNotificationLink()"
 });
 formatter.result({
-  "duration": 1181531807,
+  "duration": 1395874500,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iInputTitleAndContentForScheduledNotification()"
 });
 formatter.result({
-  "duration": 1085243025,
+  "duration": 1282726210,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickNext()"
 });
 formatter.result({
-  "duration": 446835651,
+  "duration": 456548362,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iInputMID()"
 });
 formatter.result({
-  "duration": 307552785,
+  "duration": 321852944,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickNext()"
 });
 formatter.result({
-  "duration": 161565283,
+  "duration": 161221245,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iCheckOnEmailOption()"
 });
 formatter.result({
-  "duration": 111162065,
+  "duration": 123316707,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iCheckOnSendLaterOption()"
 });
 formatter.result({
-  "duration": 128405843,
+  "duration": 126240210,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iClickOnSubmit()"
 });
 formatter.result({
-  "duration": 112116175,
+  "duration": 114166856,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateNotification.iShouldSeeNotificationCreatedSuccessfully()"
 });
 formatter.result({
-  "duration": 981498306,
+  "duration": 1389205990,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1010993206,
+  "duration": 1099349817,
   "status": "passed"
 });
 formatter.uri("SelfServicesModule.feature");
@@ -319,7 +319,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2000374418,
+  "duration": 2011889019,
   "status": "passed"
 });
 formatter.scenario({
@@ -359,29 +359,29 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1270782999,
+  "duration": 1346377358,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 326295880,
+  "duration": 356362672,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToSelfServicesModule()"
 });
 formatter.result({
-  "duration": 56102837,
+  "duration": 52056900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1000926603,
+  "duration": 1013212622,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1979098661,
+  "duration": 1981761877,
   "status": "passed"
 });
 formatter.scenario({
@@ -426,36 +426,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1373013211,
+  "duration": 1290667003,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 315654512,
+  "duration": 331833333,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnViewNotificationsLink()"
 });
 formatter.result({
-  "duration": 1428215720,
+  "duration": 1596144885,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToNotificationsListingPage()"
 });
 formatter.result({
-  "duration": 73406145,
+  "duration": 85921659,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1011447271,
+  "duration": 1029349156,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1966648014,
+  "duration": 2024855313,
   "status": "passed"
 });
 formatter.scenario({
@@ -500,36 +500,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1425405117,
+  "duration": 1372481143,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 356592578,
+  "duration": 393665348,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnCreateNotificationLink()"
 });
 formatter.result({
-  "duration": 1466836250,
+  "duration": 1255493421,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToCreateNotificationPage()"
 });
 formatter.result({
-  "duration": 60387712,
+  "duration": 81396614,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1033587640,
+  "duration": 1003375104,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1998105738,
+  "duration": 1998567603,
   "status": "passed"
 });
 formatter.scenario({
@@ -574,36 +574,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1344698632,
+  "duration": 1446027695,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 380295487,
+  "duration": 317779912,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnAcademicChecklistsLink()"
 });
 formatter.result({
-  "duration": 785409337,
+  "duration": 792635369,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToAcademicChecklistsListingPage()"
 });
 formatter.result({
-  "duration": 53911750,
+  "duration": 60476801,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1018615825,
+  "duration": 1056979764,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1996494343,
+  "duration": 1987643368,
   "status": "passed"
 });
 formatter.scenario({
@@ -648,36 +648,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1370503129,
+  "duration": 1381683545,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 326789357,
+  "duration": 304926108,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnCreateChecklistGroupLink()"
 });
 formatter.result({
-  "duration": 641559551,
+  "duration": 965872081,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToCreateChecklistGroupPage()"
 });
 formatter.result({
-  "duration": 57971646,
+  "duration": 84990539,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1032637634,
+  "duration": 1008543065,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2009385095,
+  "duration": 2068619992,
   "status": "passed"
 });
 formatter.scenario({
@@ -722,36 +722,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1270766988,
+  "duration": 1310384325,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 419252666,
+  "duration": 350779238,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnViewRequestsLink()"
 });
 formatter.result({
-  "duration": 1774350033,
+  "duration": 1019115050,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToViewRequestsPage()"
 });
 formatter.result({
-  "duration": 123196828,
+  "duration": 71209310,
   "status": "passed"
 });
 formatter.after({
-  "duration": 967190757,
+  "duration": 1099172051,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1990531153,
+  "duration": 1955526717,
   "status": "passed"
 });
 formatter.scenario({
@@ -796,36 +796,36 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1387556003,
+  "duration": 1322221616,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 319365443,
+  "duration": 341001249,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnViewLeavesLink()"
 });
 formatter.result({
-  "duration": 838330849,
+  "duration": 768881552,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToViewLeavesPage()"
 });
 formatter.result({
-  "duration": 66451075,
+  "duration": 72396611,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1069698088,
+  "duration": 1115646055,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1971468242,
+  "duration": 2004023356,
   "status": "passed"
 });
 formatter.scenario({
@@ -870,32 +870,32 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1459450106,
+  "duration": 1349093534,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 317735573,
+  "duration": 309188813,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnViewReportsLink()"
 });
 formatter.result({
-  "duration": 1101370527,
+  "duration": 1166555888,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iShouldBeDirectedToViewReportsPage()"
 });
 formatter.result({
-  "duration": 65357789,
+  "duration": 63414262,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1015324884,
+  "duration": 1029338893,
   "status": "passed"
 });
 formatter.uri("ViewNotification.feature");
@@ -907,7 +907,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2030742962,
+  "duration": 1978209007,
   "status": "passed"
 });
 formatter.scenario({
@@ -957,39 +957,39 @@ formatter.match({
   "location": "SelfServicesModule.iAmLoggedInToKSSWithCorrectAnd(String,String)"
 });
 formatter.result({
-  "duration": 1591361607,
+  "duration": 1350152744,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnSelfServicesLink()"
 });
 formatter.result({
-  "duration": 348701051,
+  "duration": 348627564,
   "status": "passed"
 });
 formatter.match({
   "location": "SelfServicesModule.iClickOnViewNotificationsLink()"
 });
 formatter.result({
-  "duration": 1404958664,
+  "duration": 1453927432,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewNotification.iClickOnViewButton()"
 });
 formatter.result({
-  "duration": 148842444,
+  "duration": 153280452,
   "status": "passed"
 });
 formatter.match({
   "location": "ViewNotification.iShouldBeDirectedToView()"
 });
 formatter.result({
-  "duration": 1394356298,
+  "duration": 1531568366,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1078558095,
+  "duration": 1145244823,
   "status": "passed"
 });
 });
