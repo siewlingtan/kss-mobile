@@ -12,4 +12,5 @@ Steps\CreateNotification.class
 Pages\ViewRequests.class
 Pages\LoginPage.class
 Pages\CreateChecklistGrpPage.class
+Steps\ViewNotification.class
 Steps\Hook.class

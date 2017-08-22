@@ -2,6 +2,7 @@ package Steps;
 
 import Base.BaseUtil;
 import Pages.CreateNotificationPage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
@@ -33,6 +34,19 @@ public class CreateNotification extends BaseUtil{
         createNotificationPage.txtNotificationBody.click();
         ((JavascriptExecutor)base.Driver).executeScript("document.querySelectorAll('div.note-editable.panel-body')[0].style.display='inline'");
         createNotificationPage.txtNotificationBody.sendKeys("Auto test body on " + createNotificationPage.getDate());
+    }
+
+    @And("^I input title and content for scheduled notification$")
+    public void iInputTitleAndContentForScheduledNotification() throws Throwable {
+
+        // Input notification title
+        createNotificationPage.txtNotificationTitle.click();
+        createNotificationPage.txtNotificationTitle.sendKeys("Auto test scheduled title on " + createNotificationPage.getDate());
+
+        // Input notification content
+        createNotificationPage.txtNotificationBody.click();
+        ((JavascriptExecutor)base.Driver).executeScript("document.querySelectorAll('div.note-editable.panel-body')[0].style.display='inline'");
+        createNotificationPage.txtNotificationBody.sendKeys("Auto test scheduled body on " + createNotificationPage.getDate());
     }
 
     @And("^I click Next$")
@@ -71,6 +85,21 @@ public class CreateNotification extends BaseUtil{
 
     }
 
+    @And("^I check on Send Later option$")
+    public void iCheckOnSendLaterOption() throws Throwable {
+
+        // Click on Send Later option
+        base.Driver.findElement(By.xpath("//input[@type='checkbox'][@name='isSendNow']")).click();
+    }
+
+    @And("^I click on Submit$")
+    public void iClickOnSubmit() throws Throwable {
+
+        // Click Submit
+        base.Driver.findElement(By.xpath("//button[contains(text(),'Submit')]")).click();
+
+    }
+
     @Then("^I should see notification created successfully$")
     public void iShouldSeeNotificationCreatedSuccessfully() throws Throwable {
 
@@ -84,7 +113,5 @@ public class CreateNotification extends BaseUtil{
         System.out.println(confirmationMsgText);
 
     }
-
-
 
 }
