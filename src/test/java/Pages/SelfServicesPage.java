@@ -14,28 +14,28 @@ public class SelfServicesPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/h1")
-    public WebElement selfServicesPageHeader;
+    private WebElement selfServicesPageHeader;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/notification']")
-    public WebElement viewNotificationsLink;
+    private WebElement viewNotificationsLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/notification/notification/create']")
-    public WebElement createNotificationLink;
+    private WebElement createNotificationLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/onboarding']")
-    public WebElement acadChecklistsLink;
+    private WebElement acadChecklistsLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/onboarding/admin/create']")
-    public WebElement createChecklistGrpLink;
+    private WebElement createChecklistGrpLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/lov/admin']")
-    public WebElement viewLOVReqLink;
+    private WebElement viewLOVReqLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/leave/admin']")
-    public WebElement viewLeavesLink;
+    private WebElement viewLeavesLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/notification/notification/report']")
-    public WebElement viewReportsLink;
+    private WebElement viewReportsLink;
 
     public String getSelfServicesHeaderText() {
 

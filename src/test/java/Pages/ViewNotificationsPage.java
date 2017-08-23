@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
-
 public class ViewNotificationsPage {
 
     public ViewNotificationsPage (WebDriver driver){
@@ -15,10 +13,13 @@ public class ViewNotificationsPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div/div/div[1]/div[1]/h2")
-    public WebElement notificationsPageHeader;
+    private WebElement notificationsPageHeader;
 
-    @FindBy(how = How.XPATH, using = "//td[@data-title='Title']")
-    public WebElement notificationTitleOnListingPage;
+    @FindBy(how = How.XPATH, using = "//a[@type='button'][contains(text(),'View')]")
+    private WebElement btnView;
+
+    @FindBy(how = How.XPATH, using = "//div[@class='form-group']/h2")
+    private WebElement notificationTitleOnViewPage;
 
     public String getNotificationsHeaderText(){
 
@@ -28,11 +29,16 @@ public class ViewNotificationsPage {
         return  headerOnNotificationsPage;
     }
 
-    public String getNotificationTitleOnListingPage(){
+    public void clickBtnView(){
 
-        String getNotificationTitleOnListingPage;
+        btnView.click();
+    }
 
-        getNotificationTitleOnListingPage = notificationTitleOnListingPage.getText();
-        return getNotificationTitleOnListingPage;
+    public String getNotificationTitleOnViewPage(){
+
+        String titleOnViewPage;
+
+        titleOnViewPage = notificationTitleOnViewPage.getText();
+        return titleOnViewPage;
     }
 }

@@ -17,7 +17,7 @@ public class KSSPage {
     public WebElement logoutLink;
 
     @FindBy(how = How.CSS, using = "a[href='/index.php/selfServices/index'")
-    public WebElement selfServicesLink;
+    private WebElement selfServicesLink;
 
     public void clickLogout(){
         logoutLink.click();

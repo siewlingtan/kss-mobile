@@ -13,7 +13,7 @@ public class CreateChecklistGrpPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div[2]/div/h2")
-    public WebElement createChecklistGrpPageHeader;
+    private WebElement createChecklistGrpPageHeader;
 
     public String getCreateChecklistGrpHeaderText() {
 

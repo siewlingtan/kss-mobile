@@ -10,51 +10,38 @@ import org.junit.Assert;
 
 public class SelfServicesModule extends BaseUtil{
 
-    private BaseUtil base;
+    private final BaseUtil base;
 
-    private LoginPage loginPage;
-    private KSSPage kssPage;
-    private SelfServicesPage selfServicesPage;
-    private ViewNotificationsPage viewNotificationsPage;
-    private CreateNotificationPage createNotificationPage;
-    private AcadChecklistsPage acadChecklistsPage;
-    private CreateChecklistGrpPage createChecklistGrpPage;
-    private ViewRequests viewRequests;
-    private ViewLeaveAppPage viewLeaveAppPage;
-    private ViewClassroomReportsPage viewClassroomReportsPage;
+    private final LoginPage loginPage;
+    private final KSSPage kssPage;
+    private final SelfServicesPage selfServicesPage;
+    private final ViewNotificationsPage viewNotificationsPage;
+    private final AcadChecklistsPage acadChecklistsPage;
+    private final CreateChecklistGrpPage createChecklistGrpPage;
+    private final ViewRequests viewRequests;
+    private final ViewLeaveAppPage viewLeaveAppPage;
+    private final ViewClassroomReportsPage viewClassroomReportsPage;
 
     public SelfServicesModule(BaseUtil base) {
         this.base = base;
 
-        LoginPage loginPage = new LoginPage(base.Driver);
-        this.loginPage = loginPage;
+        this.loginPage = new LoginPage(base.Driver);
 
-        KSSPage kssPage = new KSSPage(base.Driver);
-        this.kssPage = kssPage;
+        this.kssPage = new KSSPage(base.Driver);
 
-        SelfServicesPage selfServicesPage = new SelfServicesPage(base.Driver);
-        this.selfServicesPage = selfServicesPage;
+        this.selfServicesPage = new SelfServicesPage(base.Driver);
 
-        ViewNotificationsPage viewNotificationsPage = new ViewNotificationsPage(base.Driver);
-        this.viewNotificationsPage = viewNotificationsPage;
+        this.viewNotificationsPage = new ViewNotificationsPage(base.Driver);
 
-        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
-        this.createNotificationPage = createNotificationPage;
+        this.acadChecklistsPage = new AcadChecklistsPage(base.Driver);
 
-        AcadChecklistsPage acadChecklistsPage = new AcadChecklistsPage(base.Driver);
-        this.acadChecklistsPage = acadChecklistsPage;
+        this.createChecklistGrpPage = new CreateChecklistGrpPage(base.Driver);
 
-        CreateChecklistGrpPage createChecklistGrpPage = new CreateChecklistGrpPage(base.Driver);
-        this.createChecklistGrpPage = createChecklistGrpPage;
+        this.viewRequests = new ViewRequests(base.Driver);
 
-        ViewRequests viewRequests = new ViewRequests(base.Driver);
-        this.viewRequests = viewRequests;
+        this.viewLeaveAppPage = new ViewLeaveAppPage(base.Driver);
 
-        ViewLeaveAppPage viewLeaveAppPage = new ViewLeaveAppPage(base.Driver);
-        this.viewLeaveAppPage = viewLeaveAppPage;
-
-        ViewClassroomReportsPage viewClassroomReportsPage = new ViewClassroomReportsPage(base.Driver);
-        this.viewClassroomReportsPage = viewClassroomReportsPage;
+        this.viewClassroomReportsPage = new ViewClassroomReportsPage(base.Driver);
 
     }
 
@@ -66,7 +53,7 @@ public class SelfServicesModule extends BaseUtil{
         base.Driver.navigate().to("http://kss-mobile.aws.kaplan.com.sg/");
 
         // Input login credentials
-        loginPage.Login(username, password);
+        loginPage.Login();
 
         // Click Login
         loginPage.ClickLogin();
@@ -113,8 +100,8 @@ public class SelfServicesModule extends BaseUtil{
     @Then("^I should be directed to Create Notification Page$")
     public void iShouldBeDirectedToCreateNotificationPage() throws Throwable {
 
-        // Verify elements on page
-        Assert.assertEquals("Text field for title is not displayed.", createNotificationPage.txtNotificationTitle.isDisplayed(),true);
+        // Verify URL on page
+        Assert.assertEquals("Not on Create Notification page", base.Driver.getCurrentUrl().contains("/notification/notification/create"),true);
 
     }
 

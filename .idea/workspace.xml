@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f44fdc4-4efa-4e52-aecf-a76c60bc6f9f" name="Default" comment="Update initialization of pages to the top of each step file.">
+    <list default="true" id="8f44fdc4-4efa-4e52-aecf-a76c60bc6f9f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/kss-mobile-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/kss-mobile-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Base/BaseUtil.class" afterPath="$PROJECT_DIR$/target/test-classes/Base/BaseUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Pages/AcadChecklistsPage.class" afterPath="$PROJECT_DIR$/target/test-classes/Pages/AcadChecklistsPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Pages/CreateChecklistGrpPage.class" afterPath="$PROJECT_DIR$/target/test-classes/Pages/CreateChecklistGrpPage.class" />
@@ -19,11 +20,43 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Steps/SelfServicesModule.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/SelfServicesModule.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/Steps/ViewNotification.class" afterPath="$PROJECT_DIR$/target/test-classes/Steps/ViewNotification.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Features/CreateNotification.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/CreateNotification.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature" afterPath="$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/CreateChecklistGrpPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/CreateChecklistGrpPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/KSSPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/KSSPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/SelfServicesPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/SelfServicesPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/ViewClassroomReportsPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/ViewClassroomReportsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/ViewLeaveAppPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/ViewLeaveAppPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Pages/ViewRequests.java" afterPath="$PROJECT_DIR$/src/test/java/Pages/ViewRequests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Steps/Hook.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/Hook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java" afterPath="$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-failures.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-failures.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-features.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-features.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-steps.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-steps.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-tags.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-tags.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_CreateNotification-feature.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_CreateNotification-feature.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_SelfServicesModule-feature.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_SelfServicesModule-feature.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_ViewNotification-feature.html" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/report-feature_ViewNotification-feature.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cucumber.json" afterPath="$PROJECT_DIR$/target/cucumber.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" afterPath="$PROJECT_DIR$/target/site/cucumber-pretty/report.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Runner.TestRunner.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/Runner.TestRunner.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.TestRunner.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Runner.TestRunner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Runner.TestRunner.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Runner.TestRunner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,12 +69,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateNotification.feature" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Features/CreateNotification.feature">
+      <file leaf-file-name="ViewNotification.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewNotificationsPage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewNotification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="46" column="99" lean-forward="false" selection-start-line="46" selection-start-column="99" selection-end-line="46" selection-end-column="99" />
+              <folding>
+                <element signature="e#1072#1080#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/KSSPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/Notifications.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/AcademicChecklistsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/SelfServicesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/CreateChecklistGrpPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/ViewRequests.java" />
@@ -88,16 +142,17 @@
         <option value="$PROJECT_DIR$/src/test/java/Pages/ViewClassroomReportsPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/CreateNotification.java" />
         <option value="$PROJECT_DIR$/src/test/java/Pages/SystemDateTime.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Steps/Hook.java" />
         <option value="$PROJECT_DIR$/src/test/java/Base/BaseUtil.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java" />
         <option value="$PROJECT_DIR$/src/test/java/Features/CreateNotification.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java" />
       </list>
     </option>
   </component>
@@ -216,10 +271,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="android.databinding" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.splitter.proportion" value="0.22941177" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -454,8 +510,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="TestNG.TestRunner" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: ViewNotification" />
-        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: CreateNotification" />
+        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: CreateNotification" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: ViewNotification" />
         <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: SelfServicesModule" />
         <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: Login" />
       </list>
@@ -524,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503047238501</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Minor updates">
+      <created>1503391438027</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1503391438027</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers>
       <GitHub shared="false" url="https://github.com">
         <option name="assignedIssuesOnly" value="false" />
@@ -545,20 +608,11 @@
     </servers>
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__ViewNotification - 2017.08.21 at 17h 05m 53s.xml">
-      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateNotification - 2017.08.23 at 11h 28m 17s.xml">
+      <configuration name="Feature: CreateNotification" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__ViewNotification - 2017.08.21 at 18h 02m 13s.xml">
-      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__ViewNotification - 2017.08.21 at 18h 07m 47s.xml">
-      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__ViewNotification - 2017.08.21 at 18h 09m 08s.xml">
-      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Feature__ViewNotification - 2017.08.22 at 10h 05m 30s.xml">
-      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="Feature__CreateNotification - 2017.08.23 at 11h 54m 09s.xml">
+      <configuration name="Feature: CreateNotification" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
     <history-entry file="Feature__ViewNotification - 2017.08.22 at 10h 32m 37s.xml">
       <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
@@ -572,7 +626,16 @@
     <history-entry file="Feature__ViewNotification - 2017.08.22 at 10h 39m 22s.xml">
       <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="Feature__ViewNotification - 2017.08.23 at 10h 57m 09s.xml">
+      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Feature__ViewNotification - 2017.08.23 at 10h 58m 44s.xml">
+      <configuration name="Feature: ViewNotification" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
     <history-entry file="TestRunner - 2017.08.22 at 16h 33m 32s.xml">
+      <configuration name="TestRunner" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestRunner - 2017.08.23 at 12h 08m 05s.xml">
       <configuration name="TestRunner" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -588,12 +651,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49121523" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18008785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.49707174" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -644,7 +708,8 @@
     <MESSAGE value="CreateNotification: Add wait for overlay" />
     <MESSAGE value="Hook: Update copy from Firefox to Chrome" />
     <MESSAGE value="Update initialization of pages to the top of each step file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update initialization of pages to the top of each step file." />
+    <MESSAGE value="Minor updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,14 +883,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/SystemDateTime.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/overview-features.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -852,40 +909,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#307#308#0" expanded="false" />
-            <element signature="e#360#361#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Base/BaseUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Hook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,46 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-799">
-          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding>
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#876#884#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ViewLeaveAppPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -945,18 +933,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Features/CreateNotification.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/ViewNotification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="99" lean-forward="false" selection-start-line="46" selection-start-column="99" selection-end-line="46" selection-end-column="99" />
+          <folding>
+            <element signature="e#1072#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/Hook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/AcadChecklistsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#307#308#0" expanded="false" />
+            <element signature="e#360#361#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/SelfServicesModule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Steps/CreateNotification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="90" column="1" lean-forward="false" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/CreateNotificationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3653#3654#0" expanded="true" />
+            <element signature="e#3685#3686#0" expanded="true" />
+            <element signature="e#3718#3719#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+            <element signature="e#3787#3788#0" expanded="true" />
+            <element signature="e#3823#3824#0" expanded="true" />
+            <element signature="e#3855#3856#0" expanded="true" />
+            <element signature="e#3888#3889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="24" column="22" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/ViewNotification.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/ViewNotificationsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="41" column="31" lean-forward="false" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1027,6 +1102,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>Maven: cglib:cglib-nodep:3.2.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

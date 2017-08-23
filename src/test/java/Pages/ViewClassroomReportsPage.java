@@ -13,7 +13,7 @@ public class ViewClassroomReportsPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div/div/div[1]/h2")
-    public WebElement viewClassroomReportPageHeader;
+    private WebElement viewClassroomReportPageHeader;
 
     public String getViewClassroomReportHeaderText() {
 

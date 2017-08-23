@@ -13,7 +13,7 @@ public class ViewLeaveAppPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div[1]/h2")
-    public WebElement viewLeaveAppPageHeader;
+    private WebElement viewLeaveAppPageHeader;
 
     public String getViewLeaveAppHeaderText() {
 

@@ -13,13 +13,11 @@ public class AcadChecklistsPage {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div[1]/h2")
-    public WebElement acadChecklistsPageHeader;
+    private WebElement acadChecklistsPageHeader;
 
     public String getAcadChecklistsHeaderText() {
 
-        String headerOnAcadChecklistsPage;
+        return acadChecklistsPageHeader.getText();
 
-        headerOnAcadChecklistsPage = acadChecklistsPageHeader.getText();
-        return headerOnAcadChecklistsPage;
     }
 }

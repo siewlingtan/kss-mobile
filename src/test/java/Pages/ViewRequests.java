@@ -13,7 +13,7 @@ public class ViewRequests {
     }
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div[1]/h2")
-    public WebElement viewRequestsPageHeader;
+    private WebElement viewRequestsPageHeader;
 
     public String getViewRequestsHeaderText() {
 

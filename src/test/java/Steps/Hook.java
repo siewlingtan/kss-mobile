@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Hook extends BaseUtil{
 
-    private BaseUtil base;
+    private final BaseUtil base;
 
 
     public Hook(BaseUtil base) {

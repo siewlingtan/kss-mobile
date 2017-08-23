@@ -13,19 +13,19 @@ public class LoginPage{
     }
 
     @FindBy(how = How.NAME, using = "LoginForm[username]")
-    public WebElement txtUsername;
+    private WebElement txtUsername;
 
     @FindBy(how = How.NAME, using = "LoginForm[password]")
-    public WebElement txtPassword;
+    private WebElement txtPassword;
 
     @FindBy(how = How.NAME, using = "yt0")
-    public WebElement btnLogin;
+    private WebElement btnLogin;
 
 
-    public void Login(String username, String password){
+    public void Login(){
 
-        username = "siewling.tan";
-        password = "q7C9Kik4H";
+        String username = "siewling.tan";
+        String password = "q7C9Kik4H";
 
         txtUsername.sendKeys(username);
         txtPassword.sendKeys(password);

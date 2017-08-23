@@ -2,78 +2,58 @@ package Steps;
 
 import Base.BaseUtil;
 import Pages.CreateNotificationPage;
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CreateNotification extends BaseUtil{
 
-    private BaseUtil base;
-    private CreateNotificationPage createNotificationPage;
+    private final BaseUtil base;
+    private final CreateNotificationPage createNotificationPage;
 
     public CreateNotification(BaseUtil base) {
         this.base = base;
-
-        CreateNotificationPage createNotificationPage = new CreateNotificationPage(base.Driver);
-        this.createNotificationPage = createNotificationPage;
-    }
+        this.createNotificationPage = new CreateNotificationPage(base.Driver);
+   }
 
     @And("^I input title and content$")
     public void iInputTitleAndContent() throws Throwable {
 
         // Input notification title
-        createNotificationPage.txtNotificationTitle.click();
-        createNotificationPage.txtNotificationTitle.sendKeys("Auto test title on " + createNotificationPage.getDate());
+        createNotificationPage.inputTitle();
 
         // Input notification content
-        createNotificationPage.txtNotificationBody.click();
-        ((JavascriptExecutor)base.Driver).executeScript("document.querySelectorAll('div.note-editable.panel-body')[0].style.display='inline'");
-        createNotificationPage.txtNotificationBody.sendKeys("Auto test body on " + createNotificationPage.getDate());
+        createNotificationPage.inputContent();
     }
 
     @And("^I input title and content for scheduled notification$")
     public void iInputTitleAndContentForScheduledNotification() throws Throwable {
 
         // Input notification title
-        createNotificationPage.txtNotificationTitle.click();
-        createNotificationPage.txtNotificationTitle.sendKeys("Auto test scheduled title on " + createNotificationPage.getDate());
+        createNotificationPage.inputScheduledTitle();
 
         // Input notification content
-        createNotificationPage.txtNotificationBody.click();
-        ((JavascriptExecutor)base.Driver).executeScript("document.querySelectorAll('div.note-editable.panel-body')[0].style.display='inline'");
-        createNotificationPage.txtNotificationBody.sendKeys("Auto test scheduled body on " + createNotificationPage.getDate());
+        createNotificationPage.inputScheduledContent();
     }
 
     @And("^I click Next$")
     public void iClickNext() throws Throwable {
 
         // Wait till Next button is enabled then click
-        WebDriverWait wait = new WebDriverWait(base.Driver, 40);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Next')]")));
-
-        base.Driver.findElement(By.xpath("//*[contains(text(),'Next')]")).click();
+        createNotificationPage.clickNext();
     }
 
     @And("^I input MID$")
     public void iInputMID() throws Throwable {
 
         // Input MIDs
-        base.Driver.findElement(By.xpath("//textarea[@name='modInstanceIds']")).click();
-        base.Driver.findElement(By.xpath("//textarea[@name='modInstanceIds']")).sendKeys("18040,18041,18042");
-
-
+        createNotificationPage.inputMID();
     }
 
     @And("^I check on Email option$")
     public void iCheckOnEmailOption() throws Throwable {
 
         // Click on Email option
-        base.Driver.findElement(By.xpath("//input[@name='isSendEmail'][@type='checkbox']")).click();
+        createNotificationPage.selectEmailOption();
     }
 
 
@@ -81,7 +61,7 @@ public class CreateNotification extends BaseUtil{
     public void iClickOnSendNow() throws Throwable {
 
         // Click Send Now
-        base.Driver.findElement(By.xpath("//button[contains(text(),'Send now')]")).click();
+        createNotificationPage.clickSendNow();
 
     }
 
@@ -89,14 +69,14 @@ public class CreateNotification extends BaseUtil{
     public void iCheckOnSendLaterOption() throws Throwable {
 
         // Click on Send Later option
-        base.Driver.findElement(By.xpath("//input[@type='checkbox'][@name='isSendNow']")).click();
+        createNotificationPage.clickSendLater();
     }
 
     @And("^I click on Submit$")
     public void iClickOnSubmit() throws Throwable {
 
         // Click Submit
-        base.Driver.findElement(By.xpath("//button[contains(text(),'Submit')]")).click();
+        createNotificationPage.clickSubmit();
 
     }
 
@@ -104,13 +84,7 @@ public class CreateNotification extends BaseUtil{
     public void iShouldSeeNotificationCreatedSuccessfully() throws Throwable {
 
         // Wait till overlay shows up to verify message displayed in it
-        WebDriverWait wait = new WebDriverWait(base.Driver, 40);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div.sweet-alert.showSweetAlert.visible")));
-
-        WebElement confirmationMsg = base.Driver.findElement(By.xpath("//h2[contains(text(),'Create new notification successfully')]"));
-        String confirmationMsgText = confirmationMsg.getText();
-
-        System.out.println(confirmationMsgText);
+        createNotificationPage.getConfirmationMsg();
 
     }
 
