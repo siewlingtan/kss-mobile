@@ -18,13 +18,6 @@ public class ViewNotification extends BaseUtil {
         this.viewNotificationsPage = new ViewNotificationsPage(base.Driver);
     }
 
-/*    @And("^I click on Delivered tab$")
-    public void iClickOnDeliveredTab() throws Throwable {
-
-        // Click on Delivered tab
-
-    }*/
-
     @And("^I click on View button$")
     public void iClickOnViewButton() throws Throwable {
 
